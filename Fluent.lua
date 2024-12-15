@@ -5305,7 +5305,7 @@ local aa = {
 		}
 	end,
 	[54] = function()
-		local aa, ab, ac, ad, ae = b(50)
+		local aa, ab, ac, ad, ae = b(54)
 		return {
 			Name = "Quizzy",
 			Accent = Color3.fromRGB(255, 0, 89),
