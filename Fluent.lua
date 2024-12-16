@@ -110,7 +110,10 @@ local aa = {
 		local p, q, r, s = e(o.Creator), e(o.Elements), e(o.Acrylic), o.Components
 		local t, u, v = e(s.Notification), p.New, protectgui or (syn and syn.protect_gui) or function()
 		end
-		local w = u("ScreenGui", {Parent = i:IsStudio() and j.PlayerGui or game:GetService "CoreGui"})
+		local w = u("ScreenGui", {
+			Parent = i:IsStudio() and j.PlayerGui or game:GetService "CoreGui",
+			Name = "Fluent"
+		})
 		v(w)
 		t:Init(w)
 		local x = {
@@ -1960,7 +1963,7 @@ local aa = {
 			Signals = {},
 			TransparencyMotors = {},
 			DefaultProperties = {
-				ScreenGui = {ResetOnSpawn = false, ZIndexBehavior = Enum.ZIndexBehavior.Sibling},
+				ScreenGui = {ResetOnSpawn = false, ZIndexBehavior = Enum.ZIndexBehavior.Sibling, Name = "Fluent"},
 				Frame = {
 					BackgroundColor3 = Color3.new(1, 1, 1),
 					BorderColor3 = Color3.new(0, 0, 0),
