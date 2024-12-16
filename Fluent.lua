@@ -3382,17 +3382,6 @@ local aa = {
 						ThemeTag = {ImageColor3 = "Accent"}
 					}
 				)
-			local k2 =
-				ai(
-					"Frame",
-					{
-						Size = UDim2.new(1, 0,1 ,10),
-						BackgroundTransparency = 1,
-						AnchorPoint = Vector2.new(0, 0.5),
-						Position = UDim2.new(0, 0,0.5, 0),
-						Parent = k.Parent.Parent
-					}
-				)
 			local l, m, n =
 				ai(
 					"Frame",
@@ -3438,6 +3427,17 @@ local aa = {
 						n,
 						m,
 						l
+					}
+				)
+			local k2 =
+				ai(
+					"Frame",
+					{
+						Size = UDim2.new(1, 0,1 ,10),
+						BackgroundTransparency = 1,
+						AnchorPoint = Vector2.new(0, 0.5),
+						Position = UDim2.new(0, 0,0.5, 0),
+						Parent = o
 					}
 				)
 			ah.AddSignal(
