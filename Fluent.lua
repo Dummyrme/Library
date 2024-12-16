@@ -3382,6 +3382,16 @@ local aa = {
 						ThemeTag = {ImageColor3 = "Accent"}
 					}
 				)
+			local k2 =
+				ai(
+					"Frame",
+					{
+						Size = UDim2.new(1, 0,1 ,10),
+						BackgroundTransparency = 1,
+						AnchorPoint = Vector2.new(0, 0.5),
+						Position = UDim2.new(0, 0,0.5, 0)
+					}
+				)
 			local l, m, n =
 				ai(
 					"Frame",
@@ -3430,7 +3440,7 @@ local aa = {
 					}
 				)
 			ah.AddSignal(
-				k.Parent.Parent.InputBegan,
+				k2.InputBegan,
 				function(p)
 					if p.UserInputType == Enum.UserInputType.MouseButton1 or p.UserInputType == Enum.UserInputType.Touch then
 						i = true
@@ -3438,7 +3448,7 @@ local aa = {
 				end
 			)
 			ah.AddSignal(
-				k.Parent.Parent.InputEnded,
+				k2.InputEnded,
 				function(p)
 					if p.UserInputType == Enum.UserInputType.MouseButton1 or p.UserInputType == Enum.UserInputType.Touch then
 						i = false
