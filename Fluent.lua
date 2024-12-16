@@ -3430,7 +3430,7 @@ local aa = {
 					}
 				)
 			ah.AddSignal(
-				k.InputBegan,
+				k.Parent.Parent.InputBegan,
 				function(p)
 					if p.UserInputType == Enum.UserInputType.MouseButton1 or p.UserInputType == Enum.UserInputType.Touch then
 						i = true
@@ -3438,7 +3438,7 @@ local aa = {
 				end
 			)
 			ah.AddSignal(
-				k.InputEnded,
+				k.Parent.Parent.InputEnded,
 				function(p)
 					if p.UserInputType == Enum.UserInputType.MouseButton1 or p.UserInputType == Enum.UserInputType.Touch then
 						i = false
