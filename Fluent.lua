@@ -3394,20 +3394,21 @@ local aa = {
 				{ai("UICorner", {CornerRadius = UDim.new(1, 0)})}
 			),
 			ai(
-				"TextLabel",
+				"TextBox",
 				{
 					FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
-					Text = "Value",
+					Text = tostring(f.Default),
 					TextSize = 12,
 					TextWrapped = true,
 					TextXAlignment = Enum.TextXAlignment.Right,
 					BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-					BackgroundTransparency = 1,
+					BackgroundTransparency = 0.5,
 					Size = UDim2.new(0, 100, 0, 14),
 					Position = UDim2.new(0, -4, 0.5, 0),
 					AnchorPoint = Vector2.new(1, 0.5),
 					ThemeTag = {TextColor3 = "SubText"},
-					RichText = true
+					RichText = true,
+					ClearTextOnFocus = false
 				}
 			)
 			local o =
@@ -3466,6 +3467,19 @@ local aa = {
 					then
 						local s = math.clamp((p.Position.X - l.AbsolutePosition.X) / l.AbsoluteSize.X, 0, 1)
 						h:SetValue(h.Min + ((h.Max - h.Min) * s))
+					end
+				end
+			)
+			ah.AddSignal(
+				n.FocusLost,
+				function(enterPressed)
+					if enterPressed then
+						local inputValue = tonumber(n.Text)
+						if inputValue then
+							h:SetValue(inputValue)
+						else
+							n.Text = tostring(h.Value)
+						end
 					end
 				end
 			)
