@@ -5323,7 +5323,7 @@ local aa = {
 		return {
 			Name = "Quizzy",
 			Accent = Color3.fromRGB(255, 0, 89),
-			AcrylicMain = Color3.fromRGB(9, 7, 9),
+			AcrylicMain = Color3.fromRGB(0, 0, 0),
 			AcrylicBorder = Color3.fromRGB(90, 90, 90),
 			AcrylicGradient = ColorSequence.new(Color3.fromRGB(40, 40, 40), Color3.fromRGB(38, 35, 40)),
 			AcrylicNoise = 1,
