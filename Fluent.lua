@@ -412,7 +412,7 @@ local aa = {
 							"Frame",
 							{
 								BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-								BackgroundTransparency = 0.4,
+								BackgroundTransparency = 1,
 								Size = UDim2.fromScale(1, 1)
 							},
 							{
@@ -5323,18 +5323,18 @@ local aa = {
 		return {
 			Name = "Quizzy",
 			Accent = Color3.fromRGB(255, 0, 89),
-			AcrylicMain = Color3.fromRGB(0, 0, 0),
+			AcrylicMain = Color3.fromRGB(11, 9, 11),
 			AcrylicBorder = Color3.fromRGB(90, 90, 90),
 			AcrylicGradient = ColorSequence.new(Color3.fromRGB(40, 40, 40), Color3.fromRGB(38, 35, 40)),
 			AcrylicNoise = 1,
 			TitleBarLine = Color3.fromRGB(75, 75, 75),
-			Tab = Color3.fromRGB(115, 108, 120),
-			Element = Color3.fromRGB(115, 108, 120),
+			Tab = Color3.fromRGB(136, 156, 159),
+			Element = Color3.fromRGB(136, 156, 159),
 			ElementBorder = Color3.fromRGB(35, 35, 35),
 			InElementBorder = Color3.fromRGB(90, 90, 90),
 			ElementTransparency = 0.87,
 			ToggleSlider = Color3.fromRGB(120, 120, 120),
-			ToggleToggled = Color3.fromRGB(0, 0, 0),
+			ToggleToggled = Color3.fromRGB(11, 9, 11),
 			SliderRail = Color3.fromRGB(120, 120, 120),
 			DropdownFrame = Color3.fromRGB(160, 160, 160),
 			DropdownHolder = Color3.fromRGB(45, 45, 45),
